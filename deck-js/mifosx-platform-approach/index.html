@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]> <!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Mifos X - Platform for Microfinance</title>
+	
+	<meta name="description" content="A presentation outlining platform approach behind Mifos 'x', the next evolution of Mifos software for MFIs.">
+	<meta name="author" content="Keith Woodlock">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="../core/deck.core.css">
+	<link rel="stylesheet" href="../extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="../extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="../extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="../extensions/status/deck.status.css">
+	<link rel="stylesheet" href="../extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="../extensions/scale/deck.scale.css">
+	
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="../themes/style/web-2.0.css">
+	
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="../themes/transition/horizontal-slide.css">
+	
+	<script src="../modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+
+<!-- Begin slides -->
+<section class="slide" id="title-slide">
+	<h2>Mifos X - Platform for Microfinance</h2>
+	<p>A presentation outlining platform approach behind Mifos 'x', the next evolution of Mifos software for MFIs.</p>
+</section>
+
+<section class="slide" id="theidea">
+	<h2>Mifos: The Idea</h2>
+	<p>The idea was to <strong>'..create and deploy technology that allows the microfinance industry to scale..'</strong> and mifos would be responsible for:</p>
+	<ul>
+		<li>
+			Delivering a <strong>gold standard</strong> back-office information management system suitable for microfinance operations.
+		</li>
+		<li>
+			Would be the basis of a <strong>new platform for microfinance</strong>, which would lead to a way to achieve lower transaction costs for the MFIs, 
+			thus serving the poor with lower interest rates and better products.
+		</li>
+		<li>
+			A <strong>community-driven open-source</strong> solution that can be used, modified and repackaged in any way; 
+			The idea being that this could <strong>enable an eco-system of providers, located near to the MFIs</strong>, that could leverage Mifos right now. 
+			(i.e. vendors could leverage the core of Mifos and build their solution for MFIs.)
+		</li>
+	</ul>
+</section>
+
+<section class="slide" id="challenges">
+	<h2>Mifos: The Challenges</h2>
+
+	<p>Some of the major challenges that faced mifos and continue to face mifos today:</p>
+	<ul>
+		<li>
+			Producing an information system suitable for many MFIs with widely different requirements.
+			(due to differences in microfinance methodology, geographic location, regulatory requirements, size of MFI, etc)
+		</li>
+		<li>Producing an information system that can easily be deployed and configured by an MFIs IT team or through local vendors.</li>
+		<li>
+			Producing/Supporting a 'Model' that allowed for sustainable development of the project to meet the changing needs of the MFIs and industry.
+		</li>
+	</ul>
+</section>
+
+<section class="slide" id="mifos-today">
+	<h2>Mifos: Today</h2>
+	
+	<ul>
+		<li><h4>Pro: Product used in production today</h4>
+			<p>Based on <a href="http://mifos.org/community/whos-using-mifos">whos-using-mifos</a>, mifos has been adopted by over 30 MFIs. Several of these are large (>20,000 clients). 
+				Some of these MFIs have stated that mifos was critical in enabling them to scale over the last number of years.</p>
+		</li>
+		<li><h4>Con: Wider adoption expected?</h4>
+			<p>Given mifos is a free open source software, wider adoption might be expected. Right now its not a good fit for the wider community - 
+			tends to suit group lending type MFIs. Migrations onto mifos have proved difficult/costly.</p>
+		</li>
+	</ul>
+</section>
+
+<section class="slide" id="theidea-reviewed">
+	<h2>Mifos: The Idea (Review & in hindsight)</h2>
+	<ul>
+		<li>Whilst mifos has certainly helped some MFIs in their efforts to scale, it hasn't become the <strong>gold standard</strong> back-office 
+		information management system suitable for the microfinance industry.</li>
+		<li>Mifos is not a <strong>platform for microfinance</strong> it is a <strong>product</strong> (that some MFIs use). A product that has proved 
+		difficult to change with no clear way of extending/reusing its core capabilities (note: There has been recent work on adding RESTful api).
+		</li>
+		<li>Have we <strong>enabled an eco-system of providers, located near to the MFIs</strong>? Can vendors leverage the core of Mifos and build their solution for MFIs?</li>
+	</ul>
+</section>
+
+<section class="slide" id="mifosx-platform">
+	<h2>Mifos X: Return to the platform idea</h2>
+	<p>We want to go back to the platform idea. We feel this can help address the '..many MFIs with widely different requirements..' challenge.</p>
+
+	<p>Products built on top of the platform can be in any technology for any device (though a lightweight scripting language like JavaScript seems sensible for rapid prototyping to clients). 
+	This gives control to the people who are trying to provide the right functionality for a particular MFI.</p>
+</section>
+
+<section class="slide" id="mifosx-platform-2">
+	<h2>Mifos X: Return to the platform idea</h2>
+	<p>
+	The central technical aspect of <strong>mifos X</strong> is that all back-end capabilities are exposed and easily consumable through a RESTful HTTP API.
+	It is a <strong>platform</strong> that allows for <strong>client applications</strong> to be built on/against it.
+	</p>
+	<img src="platform-view.bmp" alt="Mobile/desktop/browser based apps built on top of platform API" width="556px" height="304px">
+</section>
+
+<section class="slide" id="mifosx-platform-api">
+	<h2>The Platform API:</h2>
+	<p>The goal of the API is to empower developers to build apps on top of the <strong>Mifos X Platform</strong>.</p>
+	<ol>
+		<li>Documentation: <a href="https://ec2-46-137-62-163.eu-west-1.compute.amazonaws.com:8443/api-docs/apiLive.htm">https://ec2-46-137-62-163.eu-west-1.compute.amazonaws.com:8443/api-docs/apiLive.htm</a></li>
+	</ol>
+</section>
+
+<section class="slide" id="mifosx-platform-api-feedback-todate">
+	<h2>The Platform API: Feedback to date</h2>
+	<p>Privately and also publically through the mailing list we have received some feedback. It has ranged from a general agreement with the approach and technologies used to more detailed feedback on certail elements missing from api such as:<p>
+	<ol>
+		<li>Pagination: for resources that will require it</li>
+           <li>Search: improved flexibility on refining search e.g. find all loan by status etc</li>
+	</ol>
+
+     <p>The APIGEE document referenced in documentation outlines approaches of dealing with this which we would follow.</p>
+</section>
+
+<section class="slide" id="many-microfinance-applications">
+	<img src="MifosXGraphic.jpg" alt="Multiple applications more suited to praticular MFIs that reuse the platform.">
+</section>
+
+<section class="slide" id="whats-next">
+	<h2>Whats next?</h2>
+	<p>Whats currently in the platform is a simple implementation of Individual Lending capabilities suitable to a small MFI that worked with us from Jan through to Mar (Thank you Henrik@CreoCore)</p>
+	<ol>
+		<li>Round out extra capabilities for Individual Lending: Fees, Staff/Loan Officer relationship, etc</li>
+		<li>Other microfinance models such as Village banking?, Micro savings? Fixed-term deposit savings?</li>
+		<li>Tech bits: make it truly multi-tenant</li>
+	</ol>
+	<p>Lots of possibilities but whats important is we evolve the platforms microfinance cababilities - through collobaration with community specialists with a willing customer on the end of requirements.</p>
+</section>
+
+<section class="slide" id="any-questions">
+	<h2>Any Questions?</h2>
+</section>
+<!-- 
+<section class="slide" id="client-app-perspective">
+	<h2>Client Application Perspective</h2>
+	<ol>
+		<li>
+			<h3>Platform becomes a black box</h3>
+			<p>For the app developer, everything is hidden behind the API. This reduces complexity and knowledge required for getting up and going with client app developement. 
+			An online sandbox/dev instance of the platform would mean that the app developer wouldnt even have to set that environment locally to get going.</p>
+		</li>
+		<li>
+			<h3>Reach a wider developer base</h3>
+			<p>The API is a HTTP API that follows REST style and as such it pretty much technology agnostic. Client app developers can develop in the technologies best suited to them or their organisation.</p>
+		</li>
+		<li>
+			<h3>Possibility to deliver wider range of solutions</h3>
+			<p>One of the challenges faced is how to deliver a system that works for a wide variety of MFIs. 
+			The ability to develop a bespoke client app that leverages the platform and targets a specific MFI, country, region or credit methodology can solve this problem.</p>
+			<p>It may be possible to make these cilent apps 'comodity-like'.</p>
+		</li>
+	</ol>
+</section>
+-->
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- deck.goto snippet -->
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+	<datalist id="goto-datalist"></datalist>
+	<input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+<script>window.jQuery || document.write('<script src="../jquery-1.7.min.js"><\/script>')</script>
+
+<!-- Deck Core and extensions -->
+<script src="../core/deck.core.js"></script>
+<script src="../extensions/hash/deck.hash.js"></script>
+<script src="../extensions/menu/deck.menu.js"></script>
+<script src="../extensions/goto/deck.goto.js"></script>
+<script src="../extensions/status/deck.status.js"></script>
+<script src="../extensions/navigation/deck.navigation.js"></script>
+<script src="../extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck -->
+<script>
+$(function() {
+	$.deck('.slide');
+});
+</script>
+
+</body>
+</html>
